@@ -12,6 +12,7 @@
  * variable.
  *
  */
+#include <map>
 #include <memory>
 #include <map>
 #include <set>
