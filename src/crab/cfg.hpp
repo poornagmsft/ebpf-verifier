@@ -12,6 +12,7 @@
  * variable.
  *
  */
+#include <map>
 #include <memory>
 #include <unordered_map>
 #include <unordered_set>
@@ -391,8 +392,20 @@ class cfg_t final {
             }
         }
 
-        for (const auto& n : boost::make_iterator_range(cur.next_blocks())) {
+        auto range = boost::make_iterator_range(cur.next_blocks());
+        for (auto iter = range.begin(); iter != range.end(); iter++) {
+            const auto& n = *iter;
             merge_blocks_rec(n, visited);
+#if defined(_MSC_VER) && (_ITERATOR_DEBUG_LEVEL != 0)
+            // Using the MSVC compiler, merge_blocks_rec() can overwrite
+            // the memory pointed to by the iterator such incrementing
+            // the iterator would trigger an assert when iterator debugging
+            // is enabled. Work around this by bailing out of the loop
+            // if the iterator does not actually point to anything.
+            if (iter._Getcont() == nullptr) {
+                break;
+            }
+#endif
         }
     }
 
