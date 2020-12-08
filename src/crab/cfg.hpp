@@ -356,7 +356,8 @@ class cfg_t final {
                 if (&next_bb == &bb || next_bb.in_degree() != 1) {
                     break;
                 }
-                if (next_bb.label() == m_exit) {
+                std::string next_label = next_bb.label();
+                if (next_label == m_exit) {
                     m_exit = label;
                 }
 
@@ -367,9 +368,9 @@ class cfg_t final {
                     basic_block_t& next_next_bb = get_node(next_next_label);
                     bb >> next_next_bb;
                 }
-                remove(next_bb.label());
+                remove(next_label);
 
-                worklist.erase(next_bb.label());
+                worklist.erase(next_label);
             }
         }
     }
