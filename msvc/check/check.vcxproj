@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) Prevail Verifier contributors.
+     SPDX-License-Identifier: MIT
+  -->
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{1c0b6b90-3db0-459b-99ab-1ff457344ff0}</ProjectGuid>
+    <RootNamespace>check</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>check</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)external;$(SolutionDir)src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\asm_cfg.cpp" />
+    <ClCompile Include="..\..\src\asm_files.cpp" />
+    <ClCompile Include="..\..\src\asm_ostream.cpp" />
+    <ClCompile Include="..\..\src\asm_unmarshal.cpp" />
+    <ClCompile Include="..\..\src\assertions.cpp" />
+    <ClCompile Include="..\..\src\config.cpp" />
+    <ClCompile Include="..\..\src\crab\array_domain.cpp" />
+    <ClCompile Include="..\..\src\crab\bitset_domain.cpp" />
+    <ClCompile Include="..\..\src\crab\fwd_analyzer.cpp" />
+    <ClCompile Include="..\..\src\crab\interval.cpp" />
+    <ClCompile Include="..\..\src\crab\split_dbm.cpp" />
+    <ClCompile Include="..\..\src\crab\var_factory.cpp" />
+    <ClCompile Include="..\..\src\crab_utils\debug.cpp" />
+    <ClCompile Include="..\..\src\crab_utils\stats.cpp" />
+    <ClCompile Include="..\..\src\crab_verifier.cpp" />
+    <ClCompile Include="..\..\src\gpl\spec_prototypes.cpp" />
+    <ClCompile Include="..\..\src\main\check.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\scripts\commit-msg">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">copy %(FullPath) $(SolutionDir).git\hooks</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir).git\hooks\%(FileName)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\scripts\pre-commit">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">copy %(FullPath) $(SolutionDir).git\hooks</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir).git\hooks\%(FileName)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\external\CLI11.hpp" />
+    <ClInclude Include="..\..\external\elfio\elfio.hpp" />
+    <ClInclude Include="..\..\external\elfio\elfio_dynamic.hpp" />
+    <ClInclude Include="..\..\external\elfio\elfio_header.hpp" />
+    <ClInclude Include="..\..\external\elfio\elfio_note.hpp" />
+    <ClInclude Include="..\..\external\elfio\elfio_relocation.hpp" />
+    <ClInclude Include="..\..\external\elfio\elfio_section.hpp" />
+    <ClInclude Include="..\..\external\elfio\elfio_segment.hpp" />
+    <ClInclude Include="..\..\external\elfio\elfio_strings.hpp" />
+    <ClInclude Include="..\..\external\elfio\elfio_symbols.hpp" />
+    <ClInclude Include="..\..\external\elfio\elfio_utils.hpp" />
+    <ClInclude Include="..\..\external\elfio\elf_types.hpp" />
+    <ClInclude Include="..\..\src\asm_files.hpp" />
+    <ClInclude Include="..\..\src\asm_ostream.hpp" />
+    <ClInclude Include="..\..\src\asm_syntax.hpp" />
+    <ClInclude Include="..\..\src\asm_unmarshal.hpp" />
+    <ClInclude Include="..\..\src\config.hpp" />
+    <ClInclude Include="..\..\src\crab\array_domain.hpp" />
+    <ClInclude Include="..\..\src\crab\bitset_domain.hpp" />
+    <ClInclude Include="..\..\src\crab\cfg.hpp" />
+    <ClInclude Include="..\..\src\crab\cfg_bgl.hpp" />
+    <ClInclude Include="..\..\src\crab\dsl_syntax.hpp" />
+    <ClInclude Include="..\..\src\crab\ebpf_domain.hpp" />
+    <ClInclude Include="..\..\src\crab\fwd_analyzer.hpp" />
+    <ClInclude Include="..\..\src\crab\interval.hpp" />
+    <ClInclude Include="..\..\src\crab\linear_constraints.hpp" />
+    <ClInclude Include="..\..\src\crab\split_dbm.hpp" />
+    <ClInclude Include="..\..\src\crab\thresholds.hpp" />
+    <ClInclude Include="..\..\src\crab\variable.hpp" />
+    <ClInclude Include="..\..\src\crab\wto.hpp" />
+    <ClInclude Include="..\..\src\crab_utils\adapt_sgraph.hpp" />
+    <ClInclude Include="..\..\src\crab_utils\bignums.hpp" />
+    <ClInclude Include="..\..\src\crab_utils\bignums_boost.hpp" />
+    <ClInclude Include="..\..\src\crab_utils\bignums_gmp.hpp" />
+    <ClInclude Include="..\..\src\crab_utils\debug.hpp" />
+    <ClInclude Include="..\..\src\crab_utils\graph_ops.hpp" />
+    <ClInclude Include="..\..\src\crab_utils\heap.hpp" />
+    <ClInclude Include="..\..\src\crab_utils\patricia_trees.hpp" />
+    <ClInclude Include="..\..\src\crab_utils\safeint.hpp" />
+    <ClInclude Include="..\..\src\crab_utils\stats.hpp" />
+    <ClInclude Include="..\..\src\crab_verifier.hpp" />
+    <ClInclude Include="..\..\src\gpl\spec_prototypes.hpp" />
+    <ClInclude Include="..\..\src\gpl\spec_type_descriptors.hpp" />
+    <ClInclude Include="..\..\src\linux_ebpf.hpp" />
+    <ClInclude Include="..\..\src\linux_verifier.hpp" />
+    <ClInclude Include="..\..\src\memsize_windows.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\boost.1.72.0.0\build\boost.targets" Condition="Exists('..\packages\boost.1.72.0.0\build\boost.targets')" />
+    <Import Project="..\..\packages\boost.1.72.0.0\build\boost.targets" Condition="Exists('..\..\packages\boost.1.72.0.0\build\boost.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\boost.1.72.0.0\build\boost.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\boost.1.72.0.0\build\boost.targets'))" />
+    <Error Condition="!Exists('..\..\packages\boost.1.72.0.0\build\boost.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\boost.1.72.0.0\build\boost.targets'))" />
+  </Target>
+</Project>
