@@ -1,6 +1,8 @@
 .DS_Store
+.vs
 *.o
 *.d
+*.user
 counter/samples/*
 **/#*
 check
@@ -9,3 +11,6 @@ check
 logs/*
 build
 html
+msvc/Debug
+msvc/packages
+x64

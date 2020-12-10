@@ -148,22 +148,6 @@
     <ClCompile Include="..\..\src\asm_marshal.cpp" />
     <ClCompile Include="..\..\src\test\test.cpp" />
     <ClCompile Include="..\..\src\test\test_marshal.cpp" />
-    <ClCompile Include="..\..\src\asm_cfg.cpp" />
-    <ClCompile Include="..\..\src\asm_files.cpp" />
-    <ClCompile Include="..\..\src\asm_ostream.cpp" />
-    <ClCompile Include="..\..\src\asm_unmarshal.cpp" />
-    <ClCompile Include="..\..\src\assertions.cpp" />
-    <ClCompile Include="..\..\src\config.cpp" />
-    <ClCompile Include="..\..\src\crab\array_domain.cpp" />
-    <ClCompile Include="..\..\src\crab\bitset_domain.cpp" />
-    <ClCompile Include="..\..\src\crab\fwd_analyzer.cpp" />
-    <ClCompile Include="..\..\src\crab\interval.cpp" />
-    <ClCompile Include="..\..\src\crab\split_dbm.cpp" />
-    <ClCompile Include="..\..\src\crab\var_factory.cpp" />
-    <ClCompile Include="..\..\src\crab_utils\debug.cpp" />
-    <ClCompile Include="..\..\src\crab_utils\stats.cpp" />
-    <ClCompile Include="..\..\src\crab_verifier.cpp" />
-    <ClCompile Include="..\..\src\gpl\spec_prototypes.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -216,6 +200,11 @@
     <ClInclude Include="..\..\src\linux_ebpf.hpp" />
     <ClInclude Include="..\..\src\linux_verifier.hpp" />
     <ClInclude Include="..\..\src\memsize_windows.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\verifierlib\verifierlib.vcxproj">
+      <Project>{68ce25ed-12b3-4381-a60f-ced354207aee}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

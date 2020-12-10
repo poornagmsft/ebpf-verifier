@@ -16,15 +16,6 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Source Files\crab_utils">
-      <UniqueIdentifier>{bbba1960-2686-46d6-b4d0-b5d42cbe2bed}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\crab">
-      <UniqueIdentifier>{c3b34beb-ccf5-4d92-a99b-5cdc814891c7}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\gpl">
-      <UniqueIdentifier>{ffa9875b-9f45-4eca-b496-0ee06aca92be}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\crab">
       <UniqueIdentifier>{fa46f7be-807c-480c-97d6-6058ac8747bf}</UniqueIdentifier>
     </Filter>
@@ -42,54 +33,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\src\asm_cfg.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\assertions.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\asm_ostream.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\asm_files.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\crab_verifier.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\crab_utils\debug.cpp">
-      <Filter>Source Files\crab_utils</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\crab\var_factory.cpp">
-      <Filter>Source Files\crab</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\crab_utils\stats.cpp">
-      <Filter>Source Files\crab_utils</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\crab\split_dbm.cpp">
-      <Filter>Source Files\crab</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\crab\array_domain.cpp">
-      <Filter>Source Files\crab</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\config.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\crab\interval.cpp">
-      <Filter>Source Files\crab</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\crab\fwd_analyzer.cpp">
-      <Filter>Source Files\crab</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\crab\bitset_domain.cpp">
-      <Filter>Source Files\crab</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\asm_unmarshal.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\gpl\spec_prototypes.cpp">
-      <Filter>Source Files\gpl</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\src\test\test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
