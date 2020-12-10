@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) Prevail Verifier contributors.
+     SPDX-License-Identifier: MIT
+  -->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\crab_utils">
+      <UniqueIdentifier>{bbba1960-2686-46d6-b4d0-b5d42cbe2bed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\crab">
+      <UniqueIdentifier>{c3b34beb-ccf5-4d92-a99b-5cdc814891c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gpl">
+      <UniqueIdentifier>{ffa9875b-9f45-4eca-b496-0ee06aca92be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\crab">
+      <UniqueIdentifier>{fa46f7be-807c-480c-97d6-6058ac8747bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\crab_utils">
+      <UniqueIdentifier>{26a4e10c-ed67-4bfe-96c7-54bcef9453fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\external">
+      <UniqueIdentifier>{c503437d-4915-4cd2-9a50-77ca62174cac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gpl">
+      <UniqueIdentifier>{521066e6-9819-4f62-a128-e58c76bfee1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scripts">
+      <UniqueIdentifier>{054c829f-bfbc-4b98-ba3e-995ea96ba9cf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\main\check.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\asm_cfg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\assertions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\asm_ostream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\asm_files.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crab_verifier.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crab_utils\debug.cpp">
+      <Filter>Source Files\crab_utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crab\var_factory.cpp">
+      <Filter>Source Files\crab</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crab_utils\stats.cpp">
+      <Filter>Source Files\crab_utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crab\split_dbm.cpp">
+      <Filter>Source Files\crab</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crab\array_domain.cpp">
+      <Filter>Source Files\crab</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\config.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crab\interval.cpp">
+      <Filter>Source Files\crab</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crab\fwd_analyzer.cpp">
+      <Filter>Source Files\crab</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crab\bitset_domain.cpp">
+      <Filter>Source Files\crab</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\asm_unmarshal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gpl\spec_prototypes.cpp">
+      <Filter>Source Files\gpl</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\asm_syntax.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\crab\array_domain.hpp">
+      <Filter>Header Files\crab</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\crab_utils\bignums.hpp">
+      <Filter>Header Files\crab_utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\crab_utils\bignums_boost.hpp">
+      <Filter>Header Files\crab_utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\crab\cfg.hpp">
+      <Filter>Header Files\crab</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\CLI11.hpp">
+      <Filter>Header Files\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\crab_utils\adapt_sgraph.hpp">
+      <Filter>Header Files\crab_utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\asm_files.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\asm_ostream.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\asm_unmarshal.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\config.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\crab_verifier.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\crab_utils\bignums_gmp.hpp">
+      <Filter>Header Files\crab_utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\crab\cfg_bgl.hpp">
+      <Filter>Header Files\crab</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\crab\bitset_domain.hpp">
+      <Filter>Header Files\crab</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\crab_utils\debug.hpp">
+      <Filter>Header Files\crab_utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\elfio\elf_types.hpp">
+      <Filter>Header Files\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\elfio\elfio.hpp">
+      <Filter>Header Files\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\elfio\elfio_dynamic.hpp">
+      <Filter>Header Files\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\elfio\elfio_header.hpp">
+      <Filter>Header Files\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\elfio\elfio_note.hpp">
+      <Filter>Header Files\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\elfio\elfio_relocation.hpp">
+      <Filter>Header Files\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\elfio\elfio_section.hpp">
+      <Filter>Header Files\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\elfio\elfio_segment.hpp">
+      <Filter>Header Files\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\elfio\elfio_strings.hpp">
+      <Filter>Header Files\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\elfio\elfio_symbols.hpp">
+      <Filter>Header Files\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\elfio\elfio_utils.hpp">
+      <Filter>Header Files\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\linux_ebpf.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\linux_verifier.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\crab\fwd_analyzer.hpp">
+      <Filter>Header Files\crab</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\crab\ebpf_domain.hpp">
+      <Filter>Header Files\crab</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\crab\dsl_syntax.hpp">
+      <Filter>Header Files\crab</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\crab_utils\heap.hpp">
+      <Filter>Header Files\crab_utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\crab_utils\graph_ops.hpp">
+      <Filter>Header Files\crab_utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\crab\interval.hpp">
+      <Filter>Header Files\crab</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\crab\linear_constraints.hpp">
+      <Filter>Header Files\crab</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\crab_utils\patricia_trees.hpp">
+      <Filter>Header Files\crab_utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\crab_utils\safeint.hpp">
+      <Filter>Header Files\crab_utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\gpl\spec_prototypes.hpp">
+      <Filter>Header Files\gpl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\gpl\spec_type_descriptors.hpp">
+      <Filter>Header Files\gpl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\crab\split_dbm.hpp">
+      <Filter>Header Files\crab</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\crab_utils\stats.hpp">
+      <Filter>Header Files\crab_utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\crab\thresholds.hpp">
+      <Filter>Header Files\crab</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\crab\variable.hpp">
+      <Filter>Header Files\crab</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\crab\wto.hpp">
+      <Filter>Header Files\crab</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\memsize_windows.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\scripts\commit-msg">
+      <Filter>Scripts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\scripts\pre-commit">
+      <Filter>Scripts</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+</Project>
