@@ -2,7 +2,7 @@
 // SPDX-License-Identifier: Apache-2.0
 #include "stats.hpp"
 
-#ifndef WIN32
+#ifdef WIN32
 #include <windows.h>
 #undef max
 #else
