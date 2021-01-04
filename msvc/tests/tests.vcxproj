@@ -150,11 +150,13 @@
     <ClCompile Include="..\..\src\asm_marshal.cpp" />
     <ClCompile Include="..\..\src\test\test.cpp" />
     <ClCompile Include="..\..\src\test\test_marshal.cpp" />
+    <ClCompile Include="..\..\src\test\test_verify.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\external\catch.hpp" />
     <ClInclude Include="..\..\external\CLI11.hpp" />
     <ClInclude Include="..\..\external\elfio\elfio.hpp" />
     <ClInclude Include="..\..\external\elfio\elfio_dynamic.hpp" />
